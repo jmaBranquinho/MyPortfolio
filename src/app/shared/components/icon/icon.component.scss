@@ -1,0 +1,17 @@
+@import "../../../../variables.scss";
+
+fa.icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+fa.iconBackground {
+    background-color: $primaryColorDark;
+}

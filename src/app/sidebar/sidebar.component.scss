@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+div.sidebar#sidebar {
+    width: 100%;
+    background-color: $primaryColorLight;
+    display: flex;
+    flex-direction: column;
+
+    & > app-profile-picture {
+        order: 1;
+        flex: 0 0 20%;
+    }
+
+    & > div.details#details {
+        flex: 0 0 20%;
+        order: 2;
+
+        @media screen and (max-width: $medium) {
+            margin: auto;
+        }
+
+        & ul {
+            padding-left: 1.6rem;
+        }
+
+        & li {
+            display: block;
+            margin-bottom: 0.9rem;
+            text-decoration: none;
+
+            & a.link {
+                margin-left: 0.4rem;
+                text-decoration: none;
+                color: $CVbackgroundColor;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    & > app-education {
+        order: 3;
+        flex: 0 0 10%;
+
+        @media screen and (max-width: $medium) {
+            margin: auto;
+        }
+    }
+
+    & > app-languages {
+        order: 4;
+        flex: 0 0 10%;
+
+        @media screen and (max-width: $medium) {
+            margin: auto;
+        }
+    }
+}

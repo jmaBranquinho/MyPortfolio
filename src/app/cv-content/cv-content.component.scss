@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+div.container#cv-content {
+    width: 100%;
+    height: 100%;
+    margin: 3rem;
+
+    @media screen and (max-width: $medium) {
+        margin: auto;
+    }
+
+    & p.bio {
+        @media screen and (max-width: $medium) {
+            margin: auto 1rem;
+        }
+    }
+
+    & div.skill-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: 1fr
+    }
+
+    & p.other-skills {
+        @media screen and (max-width: $medium) {
+            margin: auto 1rem;
+          }
+    }
+}

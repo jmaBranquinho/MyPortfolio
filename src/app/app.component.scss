@@ -1,0 +1,60 @@
+@import "../variables.scss";
+
+div.border#border {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: $CVbackgroundColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > div.cv-content#cv-content {
+        flex: 0 0 70%;
+        position: relative;
+        order: 1;
+        @media screen and (max-width: $medium) {
+            order: 2;
+            flex: 0 0 100%;
+        }
+    }
+    & > div.sidebar#sidebar {
+        flex: 0 0 20%;
+        position: relative;
+        order: 2;
+        @media screen and (max-width: $medium) {
+            order: 1;
+            flex: 0 0 100%;
+        }
+    }
+}
+
+div.fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: $primaryColorDark;
+
+    & * {
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+    }
+}
+
+@media print {
+    div.border#border {
+        & > div.cv-content#cv-content {
+            flex: 0 0 55% !important;
+        }
+
+        & > div.sidebar#sidebar {
+            flex: 0 0 10% !important;
+        }
+    }
+}

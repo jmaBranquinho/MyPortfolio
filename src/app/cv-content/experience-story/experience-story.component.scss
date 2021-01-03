@@ -1,0 +1,57 @@
+@import "../../../variables.scss";
+
+div.item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+
+    @media screen and (max-width: $medium) {
+        margin: 0 1rem 1.2rem 1rem;
+    }
+
+    &:hover {
+        background: rgba(0,0,0,.2);
+    }
+    
+    & h3 {
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0.2rem;
+
+        &.jobRole {
+            color: $textColorDark;
+            flex: 0 45%;
+        }
+    
+        &.jobDate,
+        &.company {
+            color: $textHighlight
+        }
+
+        &.jobDate {
+            flex: 0 45%;
+            text-align: right;
+            margin-right: 1rem;
+        }
+
+        &.company {
+            display: block;
+            flex: 0 0 100%;
+        }
+    }
+
+    & p.description {
+        flex: 0 0 90%;
+        margin-bottom: 0;
+
+        @media screen and (max-width: $medium) {
+            flex: 0 0 100%;
+        }
+    }
+
+    & ul {
+        margin-top: 0;
+    }
+}
+
+

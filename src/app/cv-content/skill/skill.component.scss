@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+div.skill {
+  position: relative;
+  margin-bottom: 0.7rem;
+  width: 100%;
+  display: flex;
+
+  @media screen and (max-width: $medium) {
+    margin-left: 1rem;  
+  }
+
+  & > h5 {
+    font-weight: 700;
+    width: 40%;
+    display: inline;
+    margin: 0;
+  }
+
+  & .skillbar {
+    width: 50%;
+    background-color: $PagebackgroundColor;
+    border-radius: 25px;
+    height: 1rem;
+
+    & .myskill {
+        width: 10%;
+        height: inherit;
+        background-color: $skillPoints;
+        text-align: center;
+        line-height: 1rem;
+        color: $CVbackgroundColor;
+        border-radius: inherit;
+      }
+  }
+}

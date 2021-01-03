@@ -1,0 +1,12 @@
+<div class="border" id="border" #contentToPrint>
+  <div class="sidebar" id="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="cv-content" id="cv-content">
+    <app-cv-content></app-cv-content>
+  </div>
+</div>
+
+<div class="fab" (click)="generatePdf(contentToPrint)">
+  <app-icon [iconType]="downloadIcon" [isBackgroundDisplayed]="false"></app-icon>
+</div>

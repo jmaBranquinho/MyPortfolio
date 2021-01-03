@@ -1,0 +1,9 @@
+<div class="item">
+  <h3 class="sideBySide jobRole">{{ jobRole }}</h3>
+  <h3 class="sideBySide jobDate">{{ jobDate }}</h3>
+  <h3 class="company">{{ company || "-" }}</h3>
+  <p class="description">{{description}}</p>
+  <ul *ngIf="!!(keyPoints?.length > 0)">
+    <li *ngFor="let keyPoint of keyPoints"><p>{{keyPoint}}</p></li>
+  </ul>
+</div>

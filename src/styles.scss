@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 3rem 7rem;
+    background-color: $PagebackgroundColor;
+
+    @media screen and (max-width: $medium) {
+        margin: 0;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+        font-size: 8px;
+
+        & p {
+            font-size: 12px;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primaryColorDark;
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+}
+
+p {
+    color: $textColor;
+    line-height: 1.5;
+    text-align: justify;
+}

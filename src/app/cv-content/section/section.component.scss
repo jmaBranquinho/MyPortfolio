@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+div.section {
+    padding-bottom: 0.75rem;
+}
+
+h2.subtitle {
+    text-transform: uppercase;
+
+    @media screen and (max-width: $medium) {
+        margin-left: 1rem;
+    }
+}
