@@ -14,6 +14,10 @@ export class AppComponent {
     return IconType.Download;
   }
 
+  downloadCv() {
+    window.open('https://drive.google.com/u/0/uc?id=1n8A6Lo3KSHm3e6MkTrr6Ye_swbxedewR&export=download');
+  }
+
   generatePdf(data) {
     html2canvas(data, { allowTaint: false }).then(canvas => {
      const HTML_Width = canvas.width;

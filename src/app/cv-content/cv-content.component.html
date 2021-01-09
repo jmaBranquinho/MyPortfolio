@@ -1,18 +1,17 @@
 <div class="container" id="cv-content">
   <app-section [iconType]="userIcon" [title]="'About me'">
     <p class="bio">
-      Committed and efficient full stack developer with {{currentYearsOfExperience}}+ years experience in
-      both Frontend and Backend technologies, specialized in Asp.Net and
-      Angular.
+      Committed and efficient full stack developer with 5+ years’ experience in
+      both Frontend and Backend, specialized in Asp.Net and Angular.      
     </p>
     <p class="bio">
-      I develop robust and creative solutions with focus on code readibility,
-      performance and unit testing. I'm a SOLID and DRY design patterns
-      advocate, focused in both learning and share knowledge.
+      I develop robust and creative solutions with focus on code readability,
+      performance, and unit testing. I'm a SOLID and DRY design patterns
+      advocate, focused on both learning, and share knowledge
     </p>
   </app-section>
 
-  <app-section [iconType]="experienceIcon" [title]="'Experiences'">
+  <app-section [iconType]="experienceIcon" [title]="'Experience'">
     <app-experience-story
       *ngFor="let story of experienceList"
       [jobRole]="story.jobRole"

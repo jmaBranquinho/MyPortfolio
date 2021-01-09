@@ -45,13 +45,13 @@ export class CvContentComponent {
         jobRole: 'Senior Full Stack Developer',
         jobDate: '2020 - Present',
         company: 'Siemens',
-        description: 'Development and maintenance of of an Angular and .NET internal self-service and form-generating application. Led and coordinated a small team.'
+        description: 'Development and maintenance of an Angular and .NET internal selfservice and form-generating application. Led and coordinated a small team.'
       },
       {
         jobRole: 'Junior Full Stack Developer',
         jobDate: '2018 - 2020',
         company: 'Hitachi Consulting',
-        description: 'Development and maintenance of an Angular and .NET back-office application for an international fast food company.'
+        description: 'Development and maintenance of an Angular and .NET back-office application for an international fast-food company.'
       },
       {
         jobRole: 'Computer Vision Research Fellow',
