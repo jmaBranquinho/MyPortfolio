@@ -31,6 +31,10 @@ div.skill {
         line-height: 1rem;
         color: $CVbackgroundColor;
         border-radius: inherit;
+
+        @media screen and (max-width: $medium) {
+          font-size: 0.7rem;
+        }
       }
   }
 }

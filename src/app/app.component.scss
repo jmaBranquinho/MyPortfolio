@@ -7,10 +7,9 @@ div.border#border {
     background-color: $CVbackgroundColor;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     & > div.cv-content#cv-content {
-        flex: 0 0 70%;
+        flex: 0 0 75%;
         position: relative;
         order: 1;
         @media screen and (max-width: $medium) {
@@ -19,9 +18,10 @@ div.border#border {
         }
     }
     & > div.sidebar#sidebar {
-        flex: 0 0 20%;
+        flex: 0 0 25%;
         position: relative;
         order: 2;
+        overflow: hidden;
         @media screen and (max-width: $medium) {
             order: 1;
             flex: 0 0 100%;

@@ -1,12 +1,11 @@
 @import "../../../variables.scss";
 
 div.item {
-    display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1.2rem;
+    margin: 0 0 2.5rem;
 
     @media screen and (max-width: $medium) {
-        margin: 0 1rem 1.2rem 1rem;
+        margin: 0 1rem 2.5rem 1rem;
     }
 
     &:hover {
@@ -20,7 +19,7 @@ div.item {
 
         &.jobRole {
             color: $textColorDark;
-            flex: 0 45%;
+            display: inline-block;
         }
     
         &.jobDate,
@@ -29,9 +28,8 @@ div.item {
         }
 
         &.jobDate {
-            flex: 0 45%;
             text-align: right;
-            margin-right: 1rem;
+            float: right;
         }
 
         &.company {
@@ -41,8 +39,7 @@ div.item {
     }
 
     & p.description {
-        flex: 0 0 90%;
-        margin-bottom: 0;
+        margin: 1rem 0.2rem 0.2rem 0.2rem;
 
         @media screen and (max-width: $medium) {
             flex: 0 0 100%;
