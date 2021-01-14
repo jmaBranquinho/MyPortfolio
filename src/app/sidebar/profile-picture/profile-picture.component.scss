@@ -8,7 +8,9 @@ div.background#background {
 
 div.img-container#img-container {
     padding: 2rem 5rem 0.2rem 5rem;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     & > img.profile-photo#profile-photo {
         margin: auto;
